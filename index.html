@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12">
+                <h1 class="display-4 text-center" style="background-color: black;color: white; font-size: 30px;">Quản Lý nhân viên</h1>
+                <div class="form-group">
+                    <p>Mã nhân viên</p>
+                    <input id="maNhanVien" class="form-control" type="text">
+                    <p id="KiemTraRong-maNhanVien"></p>
+                </div>
+                <div class="form-group">
+                    <p>Tên Nhân viên</p>
+                    <input id="tenNhanVien" class="form-control" type="text">
+                    <p id="KiemTraRong-tenNhanVien"></p>
+                </div>
+                <div class="form-group">
+                    <p>Chức Vụ</p>
+                    <select class="form-control" id="chucVu">
+                        <option value="Nhân Viên">Nhân Viên</option>
+                        <option value="Giám đốc" >Giám đốc</option>
+                        <option value="Quản lý"  >Quản lý</option>
+
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <p>Lương cơ bản</p>
+                    <input id="luongCoBan" class="form-control" type="text">
+                    <p id="KiemTraRong-luongCoBan"></p>
+                </div>
+                <div class="form-group">
+                    <p>Giờ làm trong tháng</p>
+                    <input id="gioTrongThang" class="form-control" type="text">
+                </div>
+                <div class="form-group text-center">
+                    <button class=" btn btn-success" id="btn-success">Thêm Nhân Viên</button>
+
+                </div>
+
+
+            </div>
+        </div>
+        <div>
+            <table class="table">
+                <thead>
+                    <tr style="background-color: cornflowerblue;">
+                        <th>Mã nhân viên</th>
+                        <th>Tên nhân viên</th>
+                        <th>Chức vụ</th>
+                        <th>Lương cơ bản</th>
+                        <th>Tổng lương</th>
+                        <th>Giờ làm/Tháng</th>
+                        <th>Xếp loại nhân viên</th>
+                    </tr>
+                </thead>
+                <tbody id="tableNhanVien">
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <!-- <script src="./index.js"></script> -->
+    <script src="./NhanVien_DTO.js"></script>
+    <script src="./index.js"></script>
+
+</body>
+
+</html>
